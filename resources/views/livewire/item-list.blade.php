@@ -14,6 +14,7 @@
         </div> --}}
     
         <div class="overflow-hidden border border-gray-200 rounded-lg shadow-md">
+            
             <table class="w-full text-left table-auto" style="text-align: center">
                 <thead>
                     <tr class="bg-gray-100 border-b">
@@ -102,6 +103,17 @@
                     @endforelse
                 </tbody>
             </table>
+
+         {{--    <div class="mt-4">
+                {{ $items->links() }}
+            </div> --}}
+
+        </div>
+
+        <div class="mt-4">
+            <button wire:click="generateCSV" class="px-6 py-2 text-black bg-green-600 rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                Exportar a CSV
+            </button>
         </div>
     
 </div>
